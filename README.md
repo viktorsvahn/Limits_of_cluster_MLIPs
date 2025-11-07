@@ -1,7 +1,13 @@
 Data and analysis associated with DOI: .
 
 # Impact of training data and DFT functionals on properties of organic solvents using machine-learned force fields
-Viktor Svahn[^1], Ioan-Bogdan Magdău^2, Samuel P. Niblett^[3,4], Gábor Csányi^5, Kersti Hermansson^1, Jolla Kullgren^1
+Viktor Svahn<sup>1</sup>, Ioan-Bogdan Magdău<sup>2</sup>, Samuel P. Niblett<sup>3,4</sup>, Gábor Csányi<sup>5</sup>, Kersti Hermansson<sup>1</sup>, Jolla Kullgren<sup>1</sup>
+
+<sup>1</sup>Department of Chemistry, Ångström Laboratory, Uppsala University, SE-751 21, Sweden.
+<sup>2</sup>School of Natural and Environmental Sciences, Newcastle University, Newcastle upon Tyne, UK.
+<sup>3</sup>Yusuf Hamied Department of Chemistry, University of Cambridge, Lensfield Road, Cambridge, CB2 1EW, UK.
+<sup>4</sup>Dassault Systémes BIOVIA, 334 Cambridge Science Park, Cambridge CB4 0WN, UK.
+<sup>5</sup>Engineering Laboratory, University of Cambridge, Cambridge, UK.
 
 **Abstract:**
 Machine learned inter-atomic potentials (MLIPs) are often used as a means of combining the perfor
