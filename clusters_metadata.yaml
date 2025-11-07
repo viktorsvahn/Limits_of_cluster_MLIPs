@@ -1,0 +1,118 @@
+metadata:
+  - Data set: Clusters-Large
+    Parent data: Clusters-Full
+    Labels: wB97X-D3
+    Subset: 1
+    Seeds: 3
+    Number of structures: 221824
+    Number of atoms: 4805916
+
+  - Data set: Clusters-Medium
+    Parent data: Clusters-Large
+    Labels: wB97X-D3
+    Subset: 1
+    Seeds: 3
+    Number of structures: 42824
+    Number of atoms: 1269916
+  - Data set: Clusters-Medium
+    Parent data: Clusters-Large
+    Labels: wB97X-D3
+    Subset: 2
+    Seeds: 1
+    Number of structures: 42824
+    Number of atoms: 1269916
+  - Data set: Clusters-Medium
+    Parent data: Clusters-Large
+    Labels: wB97X-D3
+    Subset: 3
+    Seeds: 1
+    Number of structures: 42824
+    Number of atoms: 1269916
+
+  - Data set: Clusters-Small
+    Parent data: Clusters-Medium
+    Labels: wB97X-D3
+    Subset: 1
+    Seeds: 3
+    Number of structures: 8016
+    Number of atoms: 327089
+  - Data set: Clusters-Small
+    Parent data: Clusters-Medium
+    Labels: wB97X-D3
+    Subset: 2
+    Seeds: 1
+    Number of structures: 8016
+    Number of atoms: 327089
+  - Data set: Clusters-Small
+    Parent data: Clusters-Medium
+    Labels: wB97X-D3
+    Subset: 3
+    Seeds: 1
+    Number of structures: 8016
+    Number of atoms: 327089
+
+  - Data set: Clusters-Medium
+    Parent data: Clusters-Large
+    Labels: B97-D3
+    Subset: 1
+    Seeds: 1
+    Number of structures: 42824
+    Number of atoms: 1269916
+  - Data set: Clusters-Medium
+    Parent data: Clusters-Large
+    Labels: B97-D3
+    Subset: 2
+    Seeds: 1
+    Number of structures: 42824
+    Number of atoms: 1269916
+  - Data set: Clusters-Medium
+    Parent data: Clusters-Large
+    Labels: B97-D3
+    Subset: 3
+    Seeds: 1
+    Number of structures: 42824
+    Number of atoms: 1269916
+
+  - Data set: Clusters-Small
+    Parent data: Clusters-Medium
+    Labels: B97-D3
+    Subset: 1
+    Seeds: 1
+    Number of structures: 8016
+    Number of atoms: 327089
+  - Data set: Clusters-Small
+    Parent data: Clusters-Medium
+    Labels: B97-D3
+    Subset: 2
+    Seeds: 1
+    Number of structures: 8016
+    Number of atoms: 327089
+  - Data set: Clusters-Small
+    Parent data: Clusters-Medium
+    Labels: B97-D3
+    Subset: 3
+    Seeds: 1
+    Number of structures: 8016
+    Number of atoms: 327089
+
+MLIP downloads:
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MLIP_MACE_Clusters-Small_B97D3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MLIP_MACE_Clusters-Small_B97D3.zip"
+    extract_to: "Clusters-Small/B97D3"
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MLIP_MACE_Clusters-Small_wB97XD3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MLIP_MACE_Clusters-Small_wB97XD3.zip"
+    extract_to: "Clusters-Small/wB97XD3"
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MLIP_MACE_Clusters-Medium_B97D3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MLIP_MACE_Clusters-Medium_B97D3.zip"
+    extract_to: "Clusters-Medium/B97D3"
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MLIP_MACE_Clusters-Medium_wB97XD3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MLIP_MACE_Clusters-Medium_wB97XD3.zip"
+    extract_to: "Clusters-Medium/wB97XD3"
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MLIP_MACE_Clusters-Large_wB97XD3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MLIP_MACE_Clusters-Large_wB97XD3.zip"
+    extract_to: "Clusters-Large/wB97XD3"
+
+MDSims downloads:
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MDSims_1000atoms_1ns_Clusters-Small_B97D3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MDSims_1000atoms_1ns_Clusters-Small_B97D3.zip"
+    extract_to: "Clusters-Small/B97D3"

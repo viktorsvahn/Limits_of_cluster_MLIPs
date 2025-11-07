@@ -1,0 +1,43 @@
+metadata:
+  - Data set: Periodic
+    Labels: PBE-D2
+    Subset: 1
+    Seeds: 1
+    Number of structures: 935
+    Number of atoms: 66188
+    
+  - Data set: Periodic
+    Labels: PBE-D3
+    Subset: 1
+    Seeds: 1
+    Number of structures: 935
+    Number of atoms: 66188
+
+  - Data set: Periodic
+    Labels: B97-D3
+    Subset: 1
+    Seeds: 1
+    Number of structures: 935
+    Number of atoms: 66188
+
+MLIP downloads:
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MLIP_MACE_Periodic_B97D3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MLIP_MACE_Periodic_B97D3.zip"
+    extract_to: "Periodic/B97D3"
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MLIP_MACE_Periodic_PBED2.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MLIP_MACE_Periodic_PBED2.zip"
+    extract_to: "Periodic/PBED2"
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MLIP_MACE_Periodic_PBED3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MLIP_MACE_Periodic_PBED3.zip"
+    extract_to: "Periodic/PBED3"
+
+MDSims downloads:
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MDSims_1000atoms_1ns_Periodic_B97D3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MDSims_1000atoms_1ns_Periodic_B97D3.zip"
+    extract_to: "Periodic/B97D3"
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MDSims_1000atoms_1ns_Periodic_PBED3.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MDSims_1000atoms_1ns_Periodic_PBED3.zip"
+    extract_to: "Periodic/PBED3"
+  - url: "https://zenodo.org/api/records/10712131/draft/files/MDSims_1000atoms_1ns_Periodic_PBED2.zip/content?access_token=NwtW1nUYxaPUKiRAaoDsFPNwmrweTDvms4GXDPWJpmOdA7q6NB1LPqSUVNiw"
+    output_file: "MDSims_1000atoms_1ns_Periodic_PBED2.zip"
+    extract_to: "Periodic/PBED2"
