@@ -1,3 +1,14 @@
+from ase.io import read, iread
+import ase.units
+import pickle
+import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
+from aseMolec import pltProps as pp
+from aseMolec import anaAtoms as aa
+import pandas as pd
+import numpy as np
+import tol_colors as tc
+
 def get_dynamic_data(data, handle=''):
     """Collect time (fs) and MSD (Å/fs) vectors.
     
@@ -180,6 +191,7 @@ def rvalue_formatting_latex(x, trunc=6):
         return str(x)[:trunc]
 
 def get_colour(name):
+    cset = tc.tol_cset('bright')
     colmap = {
         'EMC':'blue',
         'EC:EMC (3:7)':'green',
