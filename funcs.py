@@ -9,6 +9,86 @@ import pandas as pd
 import numpy as np
 import tol_colors as tc
 
+
+def get_mol_histograms(xyz_dict):
+    histogram_dict = {
+        key:np.histogram(np.array([a.info['Nmols'] for a in xyz]), [1,2,3,4,5,6,7])[0]
+        for key, xyz in xyz_dict.items()
+    }
+    return histogram_dict
+
+
+def collect_comp(db):
+    from collections import Counter
+    buf = {}
+    for at in db:
+        if at.info['Nmols'] in buf:
+            try:
+                buf[at.info['Nmols']] += [at.info['Comp']]
+            except:
+                buf[at.info['Nmols']] += [at.info['config_type']]
+        else:
+            try:
+                buf[at.info['Nmols']] = [at.info['Comp']]
+            except:
+                buf[at.info['Nmols']] = [at.info['config_type']]
+
+    comp = {}
+    for b in buf:
+        comp[b] = dict(Counter(buf[b]))
+    return comp
+
+
+def flatten_comp(comp_dict):
+    flattened_comp_dict = {}
+    for csize, dist in comp_dict.items():
+        tmp = {
+            'EMC':0,
+            'EC':0,
+            'EC and EMC + other':0,
+            'EC or EMC + other':0,
+            'Other':0,
+        }
+        for comp, count in dist.items():
+            part = comp.split(':')
+            part = [p.split('(')[0] for p in part]
+            part = [''.join([i for i in p if not i.isdigit()]) for p in part]
+            if ('EC' not in part) and ('EMC' not in part):
+                tmp['Other'] += count            
+            elif ('EC' in part) and ('EMC' in part):
+                tmp['EC and EMC + other'] += count
+            elif ('EC' in part) and ('EMC' not in part):
+                if len(set(part)) == 1:
+                    tmp['EC'] += count
+                else:
+                    tmp['EC or EMC + other'] += count
+            elif ('EC' not in part) and ('EMC' in part):
+                if len(set(part)) == 1:
+                    tmp['EMC'] += count
+                else:
+                    tmp['EC or EMC + other'] += count
+            else:
+                tmp['EC or EMC + other'] += count
+
+        flattened_comp_dict[csize] = tmp
+    df = pd.DataFrame(flattened_comp_dict).T
+    return df.sort_index(inplace=False)
+
+
+def hist_dict_to_df(hist_dict):
+    hist_df = pd.DataFrame(hist_dict)
+    hist_df.index.name = 'Cluster size, Nmols'
+    hist_df.index += 1
+    return hist_df
+
+
+def get_expectation_values(hist_df, arr):
+    column_totals = hist_df.aggregate('sum', axis=0)
+    prob_df = hist_df/column_totals
+    expectation = (prob_df*arr[:,None]).aggregate('sum', axis=0).round(decimals=2)
+    return expectation
+
+
 def get_dynamic_data(data, handle=''):
     """Collect time (fs) and MSD (Å/fs) vectors.
     
