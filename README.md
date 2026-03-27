@@ -1,4 +1,4 @@
-Data and analysis associated with DOI: 10.1021/acs.jctc.5c02043
+Data and analysis associated with DOI: [10.1021/acs.jctc.5c02043)](https://doi.org/10.1021/acs.jctc.5c02043)
 
 # Limitations of cluster-trained MLIPs for liquid density and diffusivity
 Viktor Svahn<sup>1</sup>, Ioan-Bogdan Magdău<sup>2</sup>, Samuel P. Niblett<sup>3,4</sup>, Gábor Csányi<sup>5</sup>, Kersti Hermansson<sup>1</sup>, Jolla Kullgren<sup>1</sup>
