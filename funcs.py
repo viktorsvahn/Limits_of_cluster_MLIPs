@@ -10,6 +10,21 @@ import numpy as np
 import tol_colors as tc
 
 
+label_map = {
+        'PBED3':'PBE-D3',
+        'PBED2':'PBE-D2',
+        'B97D3':'B97-D3',
+        'B97D3':'B97-D3',
+        'wB97XD3':'wB97X-D3',
+    }
+comp_map = {
+    '000conEC':'EMC',
+    '033conEC':'EC:EMC (3:7)',
+    '066conEC':'EC:EMC (7:3)',
+    '100conEC':'EC',
+}
+
+
 def get_mol_histograms(xyz_dict):
     histogram_dict = {
         key:np.histogram(np.array([a.info['Nmols'] for a in xyz]), [1,2,3,4,5,6,7])[0]
@@ -102,6 +117,7 @@ def get_dynamic_data(data, handle=''):
 
 
 def get_trajectory_results(thermo, threshold=5e-2, window=2000, handle=None):
+    
     results = {
         'Data set':[],
         'Labels':[],
@@ -326,8 +342,7 @@ def compute_mol_rdf(traj, rmax=None, nbins=100, return_rho=False):
 			counts += mol_rdf(atoms, rmax=rmax, nbins=nbins)[0]
 	
 	num_snapshots = i+1
-	nvalid = nmols/2
-	n_k = counts/(nvalid*num_snapshots)	
+	n_k = counts/(nmols*num_snapshots)	
 	dr = rmax/nbins
 	shell_volumes = 4/3*np.pi*((r+dr)**3-r**3)
 	rho = nmols/volume
