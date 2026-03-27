@@ -14,5 +14,5 @@ Machine-learned interatomic potentials (MLIPs) based on quantum-mechanical data 
 
 This repository contains jupyter notebooks corresponding to the following sections in the article:
 - *Periodic Training Data: Impact of the DFT Functional on Densities and Diffusivities* (`part1-dft_impact-periodic_data.ipynb`)
-- Part 2:  *Property Variability from Models Fitted on Cluster Data* (`part2-property_variability-cluster_data.ipynb`)
-- SD statistics: *Data Sets for MLIP Generation* (`SD_statistics.ipynb`)
+- *Property Variability from Models Fitted on Cluster Data* (`part2-property_variability-cluster_data.ipynb`)
+- *Data Sets for MLIP Generation* (`SD_statistics.ipynb`)
